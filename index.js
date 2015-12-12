@@ -14,9 +14,8 @@ app.get('/', function (req, res) {
     res.send('Smoq Bot!');
 });
 
-app.post('/:token', function (req, res))
+app.post('/:token', function (req, res)
 {
-
     if (proces.env.smoqToken.equals(req.params.token)) {
         console.log('Yup');
         console.log(req.params);
@@ -25,7 +24,7 @@ app.post('/:token', function (req, res))
         console.log('Nope');
     }
     res.send();
-}
+});
 
 var server = app.listen(process.env.smoqPort, function () {
     var host = server.address().address;
