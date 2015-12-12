@@ -10,6 +10,11 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 
+app.get('*', function (req, res) {
+    res.send('Smoq Bot! *');
+});
+
+
 app.get('/', function (req, res) {
     res.send('Smoq Bot!');
 });
@@ -32,3 +37,4 @@ var server = app.listen(process.env.smoqPort, function () {
 
     console.log('Smoq Bot listening at http://%s:%s', host, port);
 });
+
