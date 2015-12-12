@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Telegram bot",
   "main": "index.js",
+  "engines": {
+    "node":"5.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/plysiu/smoq-bot/issues"
   },
-  "homepage": "https://github.com/plysiu/smoq-bot#readme"
+  "homepage": "https://github.com/plysiu/smoq-bot#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
