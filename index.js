@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 
 app.post('/webhook/:token', function (req, res)
 {
-    if (proces.env.smoqToken.equals(req.params.token)) {
+    if (process.env.smoqToken.equals(req.params.token)) {
         console.log('Yup');
         console.log(req.params);
         console.log(req.body);
