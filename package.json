@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/plysiu/smoq-bot#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3"
   }
 }
