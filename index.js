@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 
 app.get('/*', function (req, res) {
     res.send('Smoq Bot! *');
+
+    console.log('x');
 });
 
 
